@@ -1,0 +1,28 @@
+.foo {
+  font-family: arial, sans-serif;
+  margin: 10px;
+  padding: 25px;
+  opacity: 0.6;
+}
+.yellow {
+  background-color: yellow;
+  color: #000;
+}
+button {
+  padding: 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #888;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.6;
+}
+.mySpan {
+ background-color: red;
+ color: yellow; 
+}

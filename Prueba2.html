@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Prueba</title>
+
+ 
+
+
+    <link rel="stylesheet" type="text/css" href="css/stylesMenu.css" />
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/mioPrueba-v1.css">
+    
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="lib/jquery-ui-1.11.4/jquery-ui.js"></script>
+    
+
+    <meta charset="utf-8">
+
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+<!-- <script src="https://apis.google.com/js/client.js"></script>-->
+     <script src="miscript.js"></script>
+    </head>
+    <body>
+        <div id="content-container">
+            <div id="editor-wrapper" class="quill-wrapper">
+                <div id="formatting-container">
+                    <div class="menu ql-toolbar ql-snow">
+ 
+
+                        <div class="fondo-elemento-menu fondo-boton-menu ql-bold izquierda">
+                            <div class="largefont bold_st"></div>
+                        </div>
+                        <div class="fondo-elemento-menu fondo-boton-menu ql-italic izquierda">
+                            <div class="largefont italic_st"></div>
+                        </div>
+                        <div class="fondo-elemento-menu fondo-boton-menu ql-italic izquierda">
+                            <div class="largefont link_int"></div>
+                        </div>
+                        <div linked="arrowSize" class="button fondo-elemento-menu fondo-boton-menu ql-italic izquierda">
+                            <div class="largefont textsize"></div>
+                        </div>
+                        
+ 
+
+                        <select id="mioid" title="Size" class="ql-size" style="-webkit-user-select: text; display :none">
+                            <option value="13px">
+                                Normal
+                            </option>
+                            <option value="18px">
+                                Mediana
+                            </option>
+                            <option value="24px">
+                                Grande
+                            </option>
+                        </select> <!-- Tamaño de letra -->
+
+                        <div id="popupTextSize" style="display: none;" class=" menuPopup-vertical izquierda">
+                            <div>
+                                <div id="elemento1" data-value="13px" class="sizeOption menuPopup-vertical-item" style="font-size: 13px; -webkit-user-select: text;">
+                                    Normal
+                                </div>
+                            </div>
+                            <div>
+                                <div id="elemento2" data-value="18px" class="sizeOption menuPopup-vertical-item" style="font-size: 17px; -webkit-user-select: text;">
+                                    Mediana
+                                </div>
+                            </div>
+                            <div>
+                                <div id="elemento3" data-value="24px" class="sizeOption menuPopup-vertical-item" style="font-size: 21px; -webkit-user-select: text;">
+                                    Grande
+                                </div>
+                            </div>
+                        </div>
+
+ 
+                        <div id="extraMenu" style="display: none;" class="menuPopup-horizontal">
+                            <div class="fondo-elemento-menu fondo-boton-menu fondoAux ql-underline">
+                                <div class="largefont under_st"></div>
+                            </div>
+                            <div class="fondo-elemento-menu fondo-boton-menu fondoAux ql-list">
+                                <div class="largefont list_bulleted"></div>
+                            </div>
+                            <div class="fondo-elemento-menu fondo-boton-menu fondoAux ql-bullet">
+                                <div class="largefont list_numbered"></div>
+                            </div>
+                            <div class="fondo-elemento-menu fondo-boton-menu ql-link">
+                                <div class="largefont link"></div>
+                            </div>
+                        </div>
+
+ 
+
+                        <div class="fondo-elemento-menu fondo-separador-menu izquierda">
+                            <div class="largefont separator"></div>
+                        </div>
+                        <div class="fondo-elemento-menu fondo-drop-down-menu izquierda">
+                            <div id="arrowExtraMenu" linked="arrowExtraMenu" class="arrow largefont arrow_drop_down"></div>
+                        </div>
+                        <div class="fondo-elemento-menu fondo-separador-menu izquierda">
+                            <div class="largefont separator"></div>
+                        </div>
+                        <div class="derecha fondo-elemento-menu fondo-boton-menu" >
+                            <div class="largefont settings"></div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="menu" style="display: none;">
+                        <div class="fondoInactivo ql-bold">
+                            <div class="largefont bold_st"></div>
+                        </div>
+                        <div class="fondoInactivo ql-italic">
+                            <div class="largefont italic_st"></div>
+                        </div>
+                        <div class="fondoInactivo ql-underline">
+                            <div class="largefont under_st"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="editor-container"></div>
+            </div>
+        </div>
+
+
+    <script type="text/javascript" src="scripts/quill.js"></script> 
+    <script type="text/javascript" src="scripts/MioPruebas-v1.js"></script>
+      
+
+
+<div id="authorize-div" >
+  <span>Authorize access to Drive API</span>
+     
+        <button id="activar-button" >
+            Activar
+        </button>
+        <button id="authorize-button" >
+            Authorize
+        </button>
+    </div>
+    <pre id="output"></pre>
+
+ 
+    </body>
+
+
+         
+    
+
+
+    </html>

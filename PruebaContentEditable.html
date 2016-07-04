@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=620">
+<title>HTML5 Demo: ContentEditable</title>
+
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/jquery-ui-1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/PruebaContentEditable.css">
+<script src="lib/PruebaContentEditable.js"></script></head>
+<body>
+    <header>
+      <h1>ContentEditable</h1>
+    </header>
+
+<article>
+  <section>
+    <p>Any elements with the <code>contenteditable</code> attribute set will have a grey outline as you hover over. Feel free to edit and change their contents.  I'm using local storage to maintain your changes.</p>
+  </section>
+  <section id="editable" contenteditable="true">
+    <h2>Go ahead, edit away!</h2>
+    <p>Here's a typical paragraph element</p>
+    <ol>
+      <li>and now a list</li>
+      <li>with only</li>
+      <li>three items</li>
+    </ol>
+  </section>
+
+ 
+
+</article>
+<script>
+
+</script>
+
+   <div id="ejecutables">
+    <button id="boton1" class="btn btnnopressed"><Strong>N</Strong></button>
+    <button id="boton2" class="btn btnnopressed"><em>I</em></button>
+    <button id="boton3" class="btn btnnopressed">boton3</button>
+
+    </div>
+
+  <div id="editor" contenteditable="true" placeholder="Type here ... "><pre>Inicio Normal <strong>negrilla</strong> normal <em>esto es em</em>,<strong>negrilla   <em>esto es negrilla y em</em>  negrilla,  <em>s<u>esto es negrilla , em y subrayado</u></em></strong></pre></div>
+</body>
+</html>

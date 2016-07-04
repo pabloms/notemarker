@@ -1,0 +1,31 @@
+body {
+  font-family: 'Helvetica', 'Arial', san-serif;
+  font-size: 13px;
+  /*padding: 25px;*/
+}
+#content-container {
+  margin: auto;
+  /*width: 960px;*/
+}
+#formatting-container {
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 5px 5px;
+  overflow: hidden;
+}
+#formatting-container .ql-active,
+#formatting-container button:hover {
+  color: #008000;
+  font-weight: bold;
+}
+#editor-container {
+  /*height: 600px;*/
+
+ 
+  overflow-x: hidden;
+}
+#editor-wrapper {
+  /*border: 1px solid #aaa;
+  box-shadow: 0 0 2px 2px #ddd;*/
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ejemplo propio",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+  "content_scripts": [{
+     "js": ["lib/jquery-2.1.4.js","lib/jquery-ui-1.11.4/jquery-ui.js", "miscript.js","scripts/quill.js","scripts/MioPruebas-v1.js"],
+     "matches": ["http://*/*", "https://*/*","https://apis.google.com/js/client.js"]
+   }],
+
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Google Mail"
+
+  },
+  "icons": {
+    "16": "logo-full.png",
+    "128": "logo-full.png"
+  },
+  "background": {
+    "scripts": ["popup.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "https://apis.google.com/js/client.js"
+
+  ],
+  "oauth2": {
+    "client_id": "790289388639-0t649gisborqm9oa0h2lhn0c4c8uhebu.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive"
+    ]
+  },
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+}
